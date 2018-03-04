@@ -1,0 +1,16 @@
+Index: app/src/main/java/com/beginner/newsreader/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/beginner/newsreader/MainActivity.java	(revision )
++++ app/src/main/java/com/beginner/newsreader/MainActivity.java	(revision )
+@@ -47,7 +47,7 @@
+ //                    Log.i("output",a);
+ 
+                     DownloadTask task1=new DownloadTask();
+-                  String data1= task1.execute("https://hacker-news.firebaseio.com/v0/item/"+ jsonArray.getString(i)+".json?print=pretty").get();
++                  String data1= task1.execute("https://hacker-news.firebaseio.com/v0/item/"+ articleid+".json?print=pretty").get();
+                     JSONObject obj=new JSONObject(data1);
+                             String articleTitle=obj.getString("title");
+                             String articleURL=obj.getString("url");
